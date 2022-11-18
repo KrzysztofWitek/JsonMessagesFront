@@ -1,0 +1,68 @@
+#mobileMenu {
+  @include respond-above("md") {
+    display: none;
+  }
+
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  left: 0;
+
+  .mask {
+    z-index: 90;
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.07);
+
+    &.active {
+      right: 0;
+    }
+  }
+
+  .content {
+    z-index: 99;
+    transition: all 0.2s;
+    position: fixed;
+    top: 0;
+    right: -500px;
+    background-color: white;
+    width: 350px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .elementsWrapper {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    .wrapper {
+      height: 50px;
+
+      .item {
+        display: flex;
+        width: 350px;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 50px;
+        border-left: 3px solid white;
+
+        &.router-link-exact-active {
+          border-left: 3px solid black;
+          color: black;
+        }
+      }
+    }
+
+    &.active {
+      right: -5px;
+    }
+  }
+}

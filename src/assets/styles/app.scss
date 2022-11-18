@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap');
+
+// imports
+@import 'imports/reset';
+@import 'imports/media';
+
+@import 'partials/top_bar';
+@import 'partials/mobile_menu';
+
+body {
+  background-color: #eee;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #084C61;
+}
+
+html, body {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
