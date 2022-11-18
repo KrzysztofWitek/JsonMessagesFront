@@ -1,10 +1,12 @@
 <template>
   <div id="top_bar">
     <div class="sitename">
+
       <div class="title">
         <span class="bold">Json</span>
         <span>Messages</span>
       </div>
+    
       <div class="left_navigation">
 
         <!-- nav -->
@@ -33,13 +35,13 @@ export default {
     return {
       leftNavItems: [
         // link definitions
-        { text: "Wiadomości", link: "/" },
+        { text: "Moje wiadomości", link: "/" },
+        { text: "Wiadomości", link: "/wiadomosci" },
       ],
     };
   },
 
   methods: {
-
     collapseMobileMenu() {
       this.$emit("collapseMobileMenu");
     },

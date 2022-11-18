@@ -4,7 +4,7 @@
     <!-- message view content -->
       <div class="header">
         <div class="title">
-          Wiadomości
+          Moje wiadomości
         </div>
       </div>
 
@@ -12,6 +12,7 @@
         <!-- message related components -->
         <CreateMessageComponent />
 
+        <MyMessagesComponent />
       </div>
     </div>
   </div>
@@ -19,10 +20,12 @@
 
 <script>
 import CreateMessageComponent from '../components/message/CreateMessageComponent.vue';
+import MyMessagesComponent from '../components/message/MyMessagesComponent.vue';
 
 export default {
   components: {
-    CreateMessageComponent
+    CreateMessageComponent,
+    MyMessagesComponent
   }
 }
 </script>

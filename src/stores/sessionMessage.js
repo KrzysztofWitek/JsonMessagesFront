@@ -14,12 +14,14 @@ export const useSessionMessageStore = defineStore("sessionMessage", {
 
   getters: {
     getMyMessages(state) {
-      return state.myMessages
+      // return reversed copy
+      return state.myMessages.slice().reverse();
     }
   },
 
   actions: {
     addMessageToStore(message) {
+      // push one object to array
       this.myMessages.push(message);
     }
   }

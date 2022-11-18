@@ -23,7 +23,8 @@ export default {
     return {
       leftNavItems: [
         // link definitions
-        { text: "Wiadomości", link: "/" },
+        { text: "Moje wiadomości", link: "/" },
+        { text: "Wiadomości", link: "/wiadomosci" },
       ],
     };
   },

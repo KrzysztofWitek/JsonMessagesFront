@@ -1,13 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import MessageView from '../views/MessageView.vue'
+
+import MyMessagesView from '../views/MyMessagesView.vue'
+import MessagesView from '../views/MessagesView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'message',
-      component: MessageView
+      name: 'myMessages',
+      component: MyMessagesView
+    },
+    {
+      path: '/wiadomosci',
+      name: 'messages',
+      component: MessagesView
     }
   ]
 })

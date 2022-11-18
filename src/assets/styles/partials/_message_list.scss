@@ -1,0 +1,13 @@
+.messageList {
+  padding: 10px;
+
+  li {
+    min-height: 20px;
+    line-height: 20px;
+    padding: 5px 0 !important;
+
+    .light {
+      opacity: 0.4;
+    }
+  }
+}
