@@ -3,9 +3,12 @@
 // imports
 @import 'imports/reset';
 @import 'imports/media';
+@import 'imports/view_area';
 
 @import 'partials/top_bar';
 @import 'partials/mobile_menu';
+
+@import 'partials/card';
 
 body {
   background-color: #eee;
